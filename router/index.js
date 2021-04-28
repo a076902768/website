@@ -6,6 +6,11 @@ const routes = [
     name: "view",
     component: () => import("/@/pages/views/index.vue"),
   },
+  {
+    path: "/user",
+    name: "user",
+    component: () => import("/@/pages/user/index.vue"),
+  },
 ];
 
 export default createRouter({

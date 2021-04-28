@@ -2,6 +2,16 @@ import Api from './api';
 // import qs from 'qs';
 
 class FrontendApi extends Api {
+
+  /**
+   * 模擬API
+   */
+
+  static async getUserInfo() {
+    const res = await this.callAxios('GET','https://randomuser.me/api/',null,null,false)
+    return res;
+  }
+
   /**
    * 取得所有商品列表
    */
